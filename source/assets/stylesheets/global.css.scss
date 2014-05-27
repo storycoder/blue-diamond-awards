@@ -1,0 +1,322 @@
+//---------------------------------------------------
+// Setup
+//---------------------------------------------------
+@import "config";
+
+//---------------------------------------------------
+// helpers
+//---------------------------------------------------
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/utilities";
+
+//---------------------------------------------------
+// Base
+//---------------------------------------------------
+@import "base/root";
+@import "base/grid";
+@import "base/fonts";
+@import "base/headings";
+@import "base/code";
+@import "base/emphasis";
+@import "base/html5";
+@import "base/images";
+@import "base/links";
+@import "base/lists";
+@import "base/misc";
+@import "base/paragraphs";
+@import "base/quotes";
+@import "base/tables";
+
+//---------------------------------------------------
+// Inner container
+//---------------------------------------------------
+.inner {
+  margin: 0 auto;
+  padding: 0 5%;
+  max-width: 960px;
+}
+//---------------------------------------------------
+// Section
+//---------------------------------------------------
+section {
+  padding: $baseline*6 0;
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    color: $gray;
+  }
+}
+
+//---------------------------------------------------
+// Logo
+//---------------------------------------------------
+.logo {
+  background-color: #fff;
+  font-size: 18px;
+  margin: 0 0 $baseline*4 $baseline*1.5;
+  padding: $baseline*4 $baseline*2;
+  position: relative;
+  width: 200px;
+  img {
+    display: block;
+    width: 100%;
+  }
+  .itology {
+    margin: 0 auto $baseline*2;
+    width: 80%;
+  }
+  &:before,
+  &:after {
+    background-color: $medium-blue;
+    content: "";
+      position: absolute;
+        top: 0;
+        bottom: $sub-baseline*2;
+    width: $baseline*1.5;
+  }
+  &:before {
+    left: -$baseline*1.5;
+  }
+  &:after {
+    right: -$baseline*1.5;
+  }
+}
+
+//---------------------------------------------------
+// Masthead
+//---------------------------------------------------
+#masthead {
+  background: $dark-blue url('/assets/images/layout/charlotte-skyline.jpg') 0 -20px no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  padding-top: 0;
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+      left: 0;
+      right: 0;
+  }
+  &:after {
+    @include skewY(10deg);
+    background-color: $dark-blue;
+    height: 1000px;
+    top: 100px;
+  }
+  &:before {
+    @include opacity(.3);
+    @include skewY(-30deg);
+    background-color: $blue;
+    height: 800px;
+    top: -683px;
+  }
+  .inner {
+    position: relative;
+    z-index: 10;
+  }
+  p {
+    @extend %h3;
+    color: #fff;
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  a {
+    color: $yellow;
+  }
+  h2 {
+    color: #fff;
+    margin: 0;
+    // padding: 0;
+  }
+  form {
+    @include clear;
+    padding: $baseline 0;
+    h2 {
+      margin-bottom: $baseline;
+    }
+    input {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+    p {
+      clear: both;
+    }
+  }
+}
+
+//---------------------------------------------------
+// Forms
+//---------------------------------------------------
+input {
+  @include border-radius(4px);
+  @extend %h3;
+  border: 0;
+  color: $body-color;
+  height: $field-height;
+  line-height: $field-line-height;
+  margin-bottom: $baseline;
+  padding: $field-padding;
+}
+.button-primary {
+  @include border-radius(4px);
+  @extend %h3;
+  background-color: $yellow;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  height: $field-height;
+  line-height: $field-height;
+  margin: 0 0 $baseline;
+  padding: 0 $field-padding;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+//---------------------------------------------------
+// Nomination Categories List
+//---------------------------------------------------
+.nomination-descriptions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    @include clear;
+    padding-bottom: 50px;
+    position: relative;
+    &:nth-child(odd) {
+      padding-right: 130px;
+      img {
+        right: 0;
+      }
+    }
+    &:nth-child(even) {
+      padding-left: 130px;
+      img {
+        left: 0;
+      }
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  img {
+    position: absolute;
+      top: 0;
+    width: 100px;
+  }
+}
+
+//---------------------------------------------------
+// Timelines
+//---------------------------------------------------
+#timelines {
+  background: $dark-blue url('/assets/images/layout/section-corner-bg.png') top right no-repeat;
+  background-size: 80%;
+  color: #fff;
+  padding-top: $baseline*6;
+  h2 {
+    color: #fff;
+  }
+}
+
+.timeline {
+  list-style: none;
+  margin: $baseline*2 0 0 $baseline*2;
+  padding: 0;
+  position: relative;
+  &:before {
+    background-color: $yellow;
+    content: "";
+    position: absolute;
+      top: 0;
+      left: 0;
+      bottom: $baseline*2;
+    width: $sub-baseline;
+  }
+  li {
+    margin-bottom: $baseline*2;
+    padding-left: $baseline*3;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      display: block;
+      font-size: .8em;
+      font-style: italic;
+    }
+    &:after {
+      @include rotate(45deg);
+      content: "";
+      background-color: $yellow;
+      // border-left: 3px solid $dark-blue;
+      // border-top: 3px solid $dark-blue;
+      display: block;
+      height: $baseline*2;
+      position: absolute;
+        top: 0;
+        left: -$baseline + 2;
+      width: $baseline*2;
+    }
+  }
+}
+//---------------------------------------------------
+// Sponsors
+//---------------------------------------------------
+.sponsors-list {
+  @include clear;
+  list-style: none;
+  margin: $baseline*4 0 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+    text-align: center;
+  }
+  li {
+    margin-bottom: $baseline;
+    @include span(6 of 12);
+    &:nth-child(even) {
+      @include omega;
+    }
+  }
+}
+
+//---------------------------------------------------
+// Footer
+//---------------------------------------------------
+footer[role="contentinfo"] {
+  background-color: $dark-blue;
+  color: #fff;
+  padding: $baseline*6 0 (($baseline*6) + 40px);
+  position: relative;
+  font-size: 14px;
+  small {
+    font-size: inherit;
+  }
+  a {
+    color: $yellow;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  &:after {
+    background: transparent url('/assets/images/layout/charlotte-skyline.jpg') 0 60% no-repeat;
+    background-size: 100%;
+    content: "";
+    height: 50px;
+    position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+  }
+}
