@@ -3,6 +3,9 @@
 source 'https://rubygems.org'
 
 gem "middleman", "~>3.3.2"
+
+gem "rake"
+gem "middleman-gh-pages"
 # gem "middleman-deploy"
 # gem "middleman-smusher"
 
