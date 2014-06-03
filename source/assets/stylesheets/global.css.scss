@@ -183,18 +183,19 @@ section {
         text-align: left;
       }
     }
-    input {
+    input.email {
       width: 100%;
       @include breakpoint(medium) {
         float: left;
         width: 65%;
       }
     }
-    button {
+    input.button-primary {
       width: 100%;
       @include breakpoint(medium) {
         float: right;
         width: 30%;
+        padding: 0px;
       }
     }
     p {
