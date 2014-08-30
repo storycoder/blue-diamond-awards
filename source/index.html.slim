@@ -1,58 +1,17 @@
 ---
-title: The Blue Diamond Awards- Coming in March 2015
+title: Home
 id: homepage
 ---
 
-section#masthead
-  .inner
-    h1.logo
-      img.itology src="/assets/images/layout/it-ology-presents.png" alt="IT-oLogy Presents the"
-      img.bluediamond src="/assets/images/layout/blue-diamond-logo.png" alt="Blue Diamond Awards - 2013: Presented by IT-oLogy"
-      .ribbon
 
-    p The Blue Diamond Awards have celebrated the best in technology in the Greater Charlotte region for 20 years. In 2015, the celebration begins again.
+= content_for :masthead do
+  p The Blue Diamond Awards have celebrated the best in technology in the Greater Charlotte region for 20 years. In 2015, the celebration begins again.
 
-    = partial '/layouts/shared/subscribe'
+  == partial '/layouts/shared/subscribe'
 
-section#nomination-categories
-  .inner
-    h2 Nomination Categories
+== partial "/layouts/shared/nomination_categories"
 
-    ul.nomination-descriptions
-      li.human-capital
-        h3 Human Capital
-        p The individual or group that has made major contributions in the development or recruitment of IT talent to the Charlotte area.
-        img.icon src="/assets/images/content/icon-human-capital.png"
-      li.student-innovator
-        h3 Student Innovator
-        p The individual student that has created new and innovative technology or has demonstrated the innovative use of existing technology to drive value.
-        img.icon src="/assets/images/content/icon-student-innovator.png"
-      li.it-entrepreneur
-        h3 IT Entrepreneur
-        p The entrepreneurial individual that has turned a creative vision into a profitable and enduring business through the direct application of information technology.
-        img.icon src="/assets/images/content/icon-it-entrepreneur.png"
-      li.business-value-small-medium
-        h3 Business Value – Small/Medium
-        p The company that achieves the greatest business value via the deployment and use of nominated information technology solutions.
-        img.icon src="/assets/images/content/icon-business-value-small.png"
-      li.community-outreach
-        h3 Community Outreach
-        p The individual IT Practitioner, Student(s), or organization that has demonstrated value through a volunteer non-fee based community support outreach program.
-        img.icon src="/assets/images/content/icon-community-outreach.png"
-      li.business-value-corporate
-        h3 Business Value – Corporate
-        p The company that achieves the greatest business value via the deployment and use of nominated information technology solutions.
-        img.icon src="/assets/images/content/icon-business-value-corporate.png"
-      li.cool-innovator
-        h3 Cool Innovator
-        p The individual or company that demonstrates the best example of creativity, execution and applied invention, which addresses a new approach to an old problem that may make lasting and far reaching changes in the way we work with each other.  Value + Creativity + Execution = Cool Innovation.
-        img.icon src="/assets/images/content/icon-cool-innovator.png"
-      li.business-value-non-profit
-        h3 Business Value – Non-Profit
-        p The non-profit that achieves the greatest business value via the deployment and use of nominated information technology solutions.
-        img.icon src="/assets/images/content/icon-business-non-profit.png"
-
-section#timelines
+section#timelines.callout-container
   .inner
     h2 Timelines Overview
     p The Blue Diamond Awards recognize  the breadth of individuals and organizations that impact the Information Technology ecosystem  in the Greater Charlotte Metropolitan Area.
@@ -70,27 +29,4 @@ section#timelines
       li
         strong Award Ceremony <span>Mar. 2015</span>
 
-section#sponsorships
-  .inner
-    h2 Sponsorships
 
-    p As a sponsor, your opportunity for marketing exposure is incredible! No other event in Charlotte will have the CIO’s of Fortune 500 companies alongside entrepreneurial leaders and innovative development teams. This audience defines the future of IT in Charlotte.
-
-    p <b>Get Involved NOW!</b> Sponsors involved early will have the most impact. Don’t wait to connect your organization to the Blue Diamond Awards. Join us in shaping perceptions of Charlotte as a tech city while putting your name, brand and story in front of C-level decision makers. Contact us to learn sponsorship levels and benefits.
-
-    a.button-primary href="mailto:kay.read@it-ology.org" Contact Us
-
-    h3 Media Sponsors
-    ul.sponsors-list
-      li: a href="http://www.bizjournals.com/charlotte/" Charlotte Business Journal
-
-    h3 Website sponsors
-    ul.sponsors-list
-      li: a href="http://www.skookum.com" Skookum Digital Works
-      li: a href="http://www.itsbspoke.com" itsbspoke
-      li: a href="http://www.blendconf.com" BlendConf
-
-footer role="contentinfo"
-  .inner
-    p <small>&copy; 2015 Blue Diamond, LLC. All rights reserved.</small> Follow <a href="http://www.twitter.com/IT_oLogy">@IT_oLogy</a> or email us at <a href="mailto:kay.read@it-ology.org">kay.read@it-ology.org</a>.
-    p Presented by <a href="http://www.it-ology.org/en/CharlotteNC.aspx">IT-oLogy</a>. Find an error or want to add something? Pull requests are welcome over on <a href="https://github.com/itsbspoke/blue-diamond-awards">GitHub</a>.

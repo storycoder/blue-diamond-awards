@@ -37,6 +37,7 @@ GEM
     hooks (0.4.0)
       uber (~> 0.0.4)
     http_parser.rb (0.6.0)
+    httpclient (2.3.4.1)
     i18n (0.6.9)
     json (1.8.1)
     kramdown (1.3.3)
@@ -73,6 +74,9 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (~> 3.2)
       rack-livereload (~> 0.3.15)
+    middleman-smusher (3.0.0)
+      middleman (>= 3.0.0)
+      smusher (~> 0.4.9)
     middleman-sprockets (3.3.3)
       middleman-core (>= 3.2)
       sprockets (~> 2.2)
@@ -102,6 +106,10 @@ GEM
     slim (2.0.2)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
+    smusher (0.4.9)
+      httpclient (>= 2.2)
+      json
+      rake
     sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -132,6 +140,7 @@ DEPENDENCIES
   middleman (~> 3.3.2)
   middleman-gh-pages
   middleman-livereload (~> 3.3)
+  middleman-smusher
   rake
   redcarpet
   sass (~> 3.3)
