@@ -138,6 +138,7 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 1.0.0.alpha.19)
   middleman (~> 3.3.2)
+  middleman-core
   middleman-gh-pages
   middleman-livereload (~> 3.3)
   middleman-smusher
