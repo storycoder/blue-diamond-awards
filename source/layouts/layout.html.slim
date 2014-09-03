@@ -31,6 +31,8 @@ head
 
       == yield
 
+      - if current_page.data.id != "sponsorships"
+        == partial "sponsorships"
 
       == partial "/layouts/shared/footer"
 
