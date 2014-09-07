@@ -4,13 +4,13 @@ id: homepage
 ---
 
 
-= content_for :masthead do
+= content_for :masthead 
   p The Blue Diamond Awards have celebrated the best in technology in the Greater Charlotte region for 20 years. In 2015, the celebration begins again.
   p You can now save the date for the return of the area's most prestigious technology awards. The 2015 Blue Diamond Awards will be <strong> March 3rd </strong> at the Urban Garden at 1 BAC! 
 
-  == partial '/layouts/shared/subscribe'
+  = partial '/layouts/shared/subscribe'
 
-== partial "/layouts/shared/sponsorships"
+= partial "/layouts/shared/nomination_categories"
 
 section#timelines.callout-container
   .inner
@@ -29,7 +29,4 @@ section#timelines.callout-container
         strong Finalists Announced <span>Jan. 2015</span>
       li
         strong Award Ceremony <span>Mar. 2015</span>
-
-== partial "/layouts/shared/nomination_categories"
-
 
