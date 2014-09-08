@@ -208,16 +208,32 @@ section {
 //---------------------------------------------------
 // Forms
 //---------------------------------------------------
-input {
+input, textarea {
   @include border-radius(4px);
   @extend %h3;
-  border: 0;
+  border: 1px solid $blue;
   color: $body-color;
   height: $field-height;
   line-height: $field-line-height;
   margin-bottom: $baseline;
   padding: $field-padding;
 }
+textarea {
+  height: auto;
+}
+
+.field {
+  @include clear;
+  margin-bottom: $baseline;
+  label {
+    display: block;
+  }
+  input, textarea {
+    width: 100%;
+  }
+}
+
+
 .button-primary {
   @include border-radius(4px);
   @extend %h3;
@@ -233,6 +249,7 @@ input {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  width: 100%;
   @include breakpoint(medium) {
     display: block;
     margin-left: auto;
@@ -317,13 +334,14 @@ input {
 }
 
 //---------------------------------------------------
-// Timelines
+// Callout Container
 //---------------------------------------------------
-#timelines {
+.callout-container {
+  @include clear;
   background: $dark-blue url('/assets/images/layout/section-corner-bg.png') top right no-repeat;
   background-size: 80%;
   color: #fff;
-  padding-top: $baseline*6;
+  padding: $baseline*6 0;
   @include breakpoint(medium) {
     background-size: 60%;
   }
@@ -338,6 +356,9 @@ input {
   }
 }
 
+//---------------------------------------------------
+// Timelines
+//---------------------------------------------------
 .timeline {
   @include clear;
   list-style: none;
@@ -421,6 +442,91 @@ input {
   }
 }
 
+// sponsorship tiers list
+.tier-1,
+.tier-2,
+.tier-3,
+.tier-4 {
+  @include clear;
+  list-style: none;
+  margin: 0 0 $baseline*4;
+  padding: 0;
+  text-align: center;
+  li {
+    @include span (6 of 12);
+    margin-bottom: $sub-baseline;
+    &:nth-child(even) {
+      @include omega;
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+  }
+  .sponsor-title {
+    color: $blue;
+    font-size: 13px;
+    margin: -$sub-baseline 0 $baseline;
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
+
+@include breakpoint(small) {
+  .tier-2 li,
+  .tier-3 li{
+    @include span(4 of 12);
+    &:nth-child(even) {
+      @include span(4 of 12);
+    }
+    &:nth-child(3n) {
+      @include span(last 4 of 12);
+    }
+  }
+}
+
+@include breakpoint(medium) {
+  .tier-3 li{
+    @include span(3 of 12);
+    &:nth-child(even) {
+      @include span(3 of 12);
+    }
+    &:nth-child(3n) {
+      @include span(3 of 12);
+    }
+    &:nth-child(4n) {
+      @include span(last 3 of 12);
+    }
+  }
+}
+
+// Sponsorship tier descriptions
+.sponsorship-descriptions {
+  @include clear;
+  list-style: none;
+  margin: $baseline*2 0 0;
+  padding: 0;
+  h3 {
+    color: #3a86a9;
+  }
+  li {
+    font-size: 14px;
+    margin-bottom: $baseline*2;
+    @include breakpoint(large) {
+      @include  span(4 of 12);
+      padding-right: $baseline;
+      &:nth-child(3) {
+        @include span(last 4 of 12);
+        padding: 0 0 0 $baseline;
+      }
+    }
+  }
+
+}
 //---------------------------------------------------
 // Footer
 //---------------------------------------------------
