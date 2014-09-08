@@ -7,7 +7,8 @@ gem "middleman", "~>3.3.2"
 gem "rake"
 gem "middleman-gh-pages"
 # gem "middleman-deploy"
-# gem "middleman-smusher"
+gem "middleman-smusher"
+gem "middleman-core"
 
 # Most recent pre-release or standard versions of Sass/Compass
 gem "compass", "~> 1.0.0.alpha.19"

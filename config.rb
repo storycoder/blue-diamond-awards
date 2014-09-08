@@ -1,4 +1,10 @@
 # ----------------------------------------------
+# Analytics
+# ----------------------------------------------
+set :analytics_id, 'UA-51227922-2'
+set :analytics_site, 'bluediamondawards.com'
+
+# ----------------------------------------------
 # Basic Setup
 # ----------------------------------------------
 activate :livereload
@@ -102,7 +108,7 @@ configure :build do
   # activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   # activate :relative_assets
@@ -112,23 +118,6 @@ configure :build do
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
+  require "middleman-smusher"
+  activate :smusher
 end
-
-# ----------------------------------------------
-# Deploy
-# ----------------------------------------------
-
-# activate :deploy do |deploy|
-#   deploy.build_before = true
-#   deploy.method = :rsync
-#   deploy.host   = "/Volumes/AmLinkStyle"
-#   deploy.path   = ""
-#   # Optional Settings
-#   # deploy.user  = "tvaughan" # no default
-#   deploy.port  = 22
-#   # deploy.port  = 5309 # ssh port, default: 22
-#   # deploy.clean = true # remove orphaned files on remote host, default: false
-#   # deploy.flags = "-rltgoDvzO --no-p --del -e" # add custom flags, default: -avze
-# end
