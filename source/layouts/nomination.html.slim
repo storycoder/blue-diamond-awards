@@ -27,12 +27,11 @@ head
 
   body class="#{page_classes}"
     article role="main"
-      // partial "/layouts/shared/masthead"
+      = partial "/layouts/shared/masthead"
 
       = yield
 
-      - if current_page.data.id != "sponsorships"
-        = partial "/layouts/shared/sponsorships"
+      = partial "/layouts/shared/sponsors"
 
       = partial "/layouts/shared/footer"
 
