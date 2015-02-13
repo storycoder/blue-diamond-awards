@@ -165,7 +165,7 @@ section {
     }
   }
   a {
-    color: $yellow;
+    color: white;
   }
   h2 {
     color: #fff;
@@ -175,6 +175,13 @@ section {
       font-size: 36px;
     }
   }
+}
+
+//---
+// Subscribe
+//----
+
+#subscribe {
   form {
     @include clear;
     padding: $baseline 0;
@@ -202,6 +209,9 @@ section {
     p {
       clear: both;
     }
+		a {
+			color: $yellow;
+		}
 
   }
 }

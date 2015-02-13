@@ -12,32 +12,21 @@ section#masthead
       .ribbon
 
     p The Blue Diamond Awards have celebrated the best in technology in the Greater Charlotte region for 20 years. On <strong>March 3, 2015</strong>, the celebration begins again.
+		
+    p We have a limited number of tickets available for the public.  Consider purchasing them today to support the Charlotte technology community.
+		
 
-    = partial '/layouts/shared/subscribe'
+    a class="button-primary" href="http://www.eventbrite.com/e/2015-blue-diamond-awards-celebration-tickets-15452003358" Buy Tickets
+
 
 
 
 section#nominations
   .inner
-    h2 Nominations
-    p Thanks for your nominations.  Finalists will be announced in January.
+    = partial "/layouts/shared/nomination_categories"
 
 
-section#timelines.callout-container
+section#subscribe.callout-container
   .inner
-    h2 Timelines Overview
-    p The Blue Diamond Awards recognize the breadth of individuals and organizations that impact the Information Technology ecosystem in the Greater Charlotte Metropolitan Area.
-    p IT-oLogy is leading the effort to bring the Blue Diamond Awards back to Charlotte, after a lengthy absence. Sign up on the mailing list above to receive more information when this timeline updates.
-
-    ul.timeline
-      li
-        strong Nominations Open <span>Sept. 29, 2014</span>
-      li
-        strong Nominations Close <span>Nov. 17, 2014</span>
-      li
-        strong Judging <span>Dec. 2014</span>
-      li
-        strong Finalists Announced <span>Jan. 2015</span>
-      li
-        strong Award Ceremony <span>March 3rd 2015</span>
-
+    = partial '/layouts/shared/subscribe'
+    
