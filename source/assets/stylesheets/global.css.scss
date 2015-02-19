@@ -215,6 +215,18 @@ section {
 }
 
 //---------------------------------------------------
+// Get Ticket
+//---------------------------------------------------
+#get-ticket {
+  a.button-primary {
+    margin-left: 0px;
+    margin-top: 30px;
+    width: 203px;
+  }
+}
+
+
+//---------------------------------------------------
 // Forms
 //---------------------------------------------------
 input, textarea {
@@ -343,6 +355,89 @@ textarea {
 }
 
 //---------------------------------------------------
+// Finalists
+//---------------------------------------------------
+#finalist-header {
+  padding-bottom: 0px;
+}
+
+#finalists-category {
+  h3 {
+    margin-bottom: 0px;
+    color: $heading-color;
+    font-weight: normal;
+    display: inline-block;
+    @include breakpoint(medium) {
+      margin-bottom: 12px;
+    }
+  }
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: $heading-color;
+  }
+
+  span {
+    display: block;
+    font-size: 14px;
+    color: #9F9F9F;
+    @include breakpoint(medium) {
+      display: inline-block;
+      margin-left: 50px;
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    @include breakpoint(medium) {
+      text-align: justify
+    }
+  }
+
+  .nominee-container {
+    margin-top: 30px;
+  }
+
+  .nominee-effort {
+    text-align: justify;
+    font-weight: bold;
+  }
+
+  .nominee-info {
+    margin-bottom: 12px;
+    @include breakpoint(medium) {
+      float: right;
+    }
+  }
+
+  padding-top: 20px;
+}
+
+.finalist-category-header {
+  h2 {
+    text-align: left;
+  }
+  p {
+    padding-bottom: 30px;
+  }
+
+  img {
+    width: 120px;
+    @include breakpoint(medium) {
+      float: right;
+      width: 150px;
+      margin-left: 20px;
+    }
+  }
+
+  min-height: 260px;
+  border-bottom: 1px solid #DEDEDE
+}
+
+//---------------------------------------------------
 // Winner Categories List
 //---------------------------------------------------
 
@@ -417,6 +512,7 @@ textarea {
 //---------------------------------------------------
 .callout-container {
   @include clear;
+  border-bottom: 1px solid #98D7E5;
   background: $dark-blue url('/assets/images/layout/section-corner-bg.png') top right no-repeat;
   background-size: 80%;
   color: #fff;
