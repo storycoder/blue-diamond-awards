@@ -1,0 +1,58 @@
+---
+- category: Human Capital
+  image: /assets/images/content/icon-human-capital.png
+  name: WINNER TITLE
+  website: www.website.com
+  notable_mentions:
+    - Nominee Title
+    - Nominee Title        
+- category: Student Innovator
+  image: /assets/images/content/icon-student-innovator.png
+  name: WINNER TITLE
+  website: www.website.com
+  notable_mentions:
+    - Nominee Title
+    - Nominee Title        
+- category: IT Entrepreneur
+  image: /assets/images/content/icon-it-entrepreneur.png
+  name: WINNER TITLE
+  website: www.website.com
+  notable_mentions:
+    - Nominee Title
+    - Nominee Title        
+- category: Business Value – Small/Medium
+  image: /assets/images/content/icon-business-value-small.png
+  name: WINNER TITLE
+  website: www.website.com
+  notable_mentions:
+    - Nominee Title
+    - Nominee Title        
+- category: Community Outreach
+  image: /assets/images/content/icon-community-outreach.png
+  name: WINNER TITLE
+  website: www.website.com
+  notable_mentions:
+    - Nominee Title
+    - Nominee Title        
+- category: Business Value – Corporate
+  image: /assets/images/content/icon-business-value-corporate.png
+  name: WINNER TITLE
+  website: www.website.com
+  notable_mentions:
+    - Nominee Title
+    - Nominee Title        
+- category: Cool Innovator
+  image: /assets/images/content/icon-cool-innovator.png
+  name: WINNER TITLE
+  website: www.website.com
+  notable_mentions:
+    - Nominee Title
+    - Nominee Title        
+- category: Business Value – Non-Profit
+  image: /assets/images/content/icon-business-non-profit.png
+  name: WINNER TITLE
+  website: www.website.com
+  notable_mentions:
+    - Nominee Title
+    - Nominee Title
+---
