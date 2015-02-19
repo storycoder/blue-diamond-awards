@@ -1,0 +1,21 @@
+---
+title: Finalist
+id: finalist
+---
+
+section#masthead
+  .inner
+    = partial "/layouts/shared/finalists_masthead"
+
+section#finalist-header
+  .inner
+    = partial("layouts/shared/finalists_category_header", :locals => {:header => data.human_capital_finalists})
+
+section#finalists-category
+  .inner
+    - data.human_capital_finalists.finalists.each do |finalist|
+      = partial("/layouts/shared/finalists_category", :locals => {:finalist => finalist})
+
+section#subscribe.callout-container
+  .inner
+    = partial "/layouts/shared/get_ticket"
