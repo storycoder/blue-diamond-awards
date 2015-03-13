@@ -1,58 +1,57 @@
 ---
 - category: Human Capital
   image: /assets/images/content/icon-human-capital-winner.png
-  name: WINNER TITLE
+  name: Logical Advantage
   website: www.website.com
   notable_mentions:
-    - Nominee Title
-    - Nominee Title        
+    - Queen Associates
+    - Tech Talent South       
 - category: Student Innovator
   image: /assets/images/content/icon-student-innovator-winner.png
-  name: WINNER TITLE
+  name: Michael Kersting, Young Engineers of Today
   website: www.website.com
   notable_mentions:
-    - Nominee Title
-    - Nominee Title        
+    - Crystal Starks, Girl Develop IT
+    - Zack May, Charlotte Mecklenburg Schools
 - category: IT Entrepreneur
   image: /assets/images/content/icon-it-entrepreneur-winner.png
-  name: WINNER TITLE
+  name: David Jones, Peak 10
   website: www.website.com
   notable_mentions:
-    - Nominee Title
-    - Nominee Title        
+    - Brian Kelly, Cloud Genera
+    - Eric Waynick, Thinkgate
 - category: Business Value – Small/Medium
   image: /assets/images/content/icon-business-value-small-winner.png
-  name: WINNER TITLE
+  name: ecomdash
   website: www.website.com
   notable_mentions:
-    - Nominee Title
-    - Nominee Title        
+    - Barnhardt Manufacturing
+    - Thinkgate       
 - category: Community Outreach
   image: /assets/images/content/icon-community-outreach-winner.png
-  name: WINNER TITLE
+  name: Bosch Rexroth and Women Executives - WINGS program
   website: www.website.com
   notable_mentions:
-    - Nominee Title
-    - Nominee Title        
+    - Charlotte Region STARS Computing Corps       
 - category: Business Value – Corporate
   image: /assets/images/content/icon-business-value-corporate-winner.png
-  name: WINNER TITLE
+  name: Rubbermaid Healthcare
   website: www.website.com
   notable_mentions:
-    - Nominee Title
-    - Nominee Title        
+    - Bank of America
+    - LPL Financial        
 - category: Cool Innovator
   image: /assets/images/content/icon-cool-innovator-winner.png
-  name: WINNER TITLE
+  name: ecomdash
   website: www.website.com
   notable_mentions:
-    - Nominee Title
-    - Nominee Title        
+    - Hours Tracking, Tapity
+    - SmartCharge Bulb, TVL International
 - category: Business Value – Non-Profit
   image: /assets/images/content/icon-business-non-profit-winner.png
-  name: WINNER TITLE
+  name: Charlotte Mecklenburg Schools
   website: www.website.com
   notable_mentions:
-    - Nominee Title
-    - Nominee Title
+    - Apparo
+    - City of Charlotte
 ---
