@@ -1,4 +1,4 @@
-/ data for this file found in /data/winners.yaml
+/ data for this file found in /data/winners2015.yaml
 section#winner-categories
   .inner
     img.icon.diamond-icon src="../assets/images/layout/blue-diamond.png" alt="Blue Diamond"
@@ -6,7 +6,7 @@ section#winner-categories
     h3 To all our winners
  
     ul.nomination-descriptions.winner-descriptions
-      - data.winners.each do |winner|
+      - data.winners2015.each do |winner|
         li
           h4 #{winner.category}
           h5 #{winner.name}
